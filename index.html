@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en-us">
-
-<head>
+<!-- Browser Tab Title and CSS Stylesheet link -->
+<head> 
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Horiseon | SEO Management</title>
 </head>
-
+<!-- Beginning of readable page -->
 <body>
     <header>
+        <!-- Website header SEO in span to allow for color change in and nav for navigation links.-->
         <h1>Hori<span class="seo">seo</span>n</h1>
-        <nav>
+        <nav> 
             <ul>
                 <li>
                     <a href="#search-engine-optimization">Search Engine Optimization</a>
@@ -24,9 +25,18 @@
             </ul>
         </nav>
     </header>
-    <div class="hero"></div>
-    <main class="content">
-        <section class="search-engine-optimization">
+   
+    <div class="hero">
+ <!--  hero  is a div for background image of a team meeting displayed before main content. -->
+    </div>
+    <main class="content"> 
+        <!-- main content of page with sections 
+            for SEO, Online Reputation Management, 
+            and Social Media Marketing. 
+            Alt text provided for each image.
+            ids remain as navigation links, not 
+            for css application. -->
+        <section id="search-engine-optimization" class="search-engine-optimization">
             <img src="./assets/images/search-engine-optimization.jpg" alt="Image of chart with topics related to search engine optimization on a table with a laptop and coffee." class="float-left" />
             <h2>Search Engine Optimization</h2>
             <p>
@@ -48,6 +58,13 @@
             </p>
         </section>
     </main>
+
+    <!-- Right aligned aside listing benefits 
+        of services organized by section.  
+        IDs remain for easier searching, 
+        although semantic html made them unnecessary 
+        for application of css style.-->
+
     <aside class="benefits">
         <section class="benefit-lead">
             <h3>Lead Generation</h3>
@@ -71,6 +88,7 @@
             </p>
         </section>
     </aside>
+    <!-- semantic footer centered in css -->
     <footer>
         <h2>Made with ❤️️ by Horiseon</h2>
         <p>

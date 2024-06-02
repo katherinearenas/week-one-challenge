@@ -1,13 +1,25 @@
+/* This is the initial css applied 
+to the page setting margin and padding at 0. */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+/* This code sets the background 
+color for the entire page, later 
+overwritten for some parts of the page.*/
 body {
     background-color: #d9dcd6;
 }
 
+/* This is styling for the header 
+displayed at the top of the page. 
+This is a flex container for the h1 
+title and ul navigation links 
+allowing both to be displayed 
+on each side of the page 
+with justify: space-between.*/
 header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -18,15 +30,26 @@ header {
     justify-content: space-between;
 }
 
+/* This code sets H1 of 
+header font size  and display 
+as a single line block. */
 header h1 {
     display: inline-block;
     font-size: 48px;
 }
 
-header h1 .seo {
+/* This changes color 
+of the "seo" in "Horiseon" 
+header title */
+header h1 span {
     color: #d9dcd6;
 }
 
+/* This anchors the navigation 
+contained within the header
+to the right side of the page. 
+Each nav item links to the section 
+of content related to it.*/
 header nav {
     padding-top: 15px;
     margin-right: 20px;
@@ -35,24 +58,38 @@ header nav {
     font-size: 20px;
 }
 
+/* This list-style-type prevents 
+the nav bar from being displayed 
+with bullet points.*/
 header nav ul {
     list-style-type: none;
 }
 
+/* This display allows the 
+list to be displayed 
+as a single line. */
 header nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
 
+/* This sets the color of 
+all a elements to white. */
 a {
     color: #ffffff;
     text-decoration: none;
 }
 
+/* This sets font of all 
+p elements to 16px. */
 p {
     font-size: 16px;
 }
 
+/* This sets the display 
+height, width and margin 
+of  the background image 
+which is applied within the hero div. */
 .hero {
     height: 800px;
     width: 100%;
@@ -61,24 +98,63 @@ p {
     background-size: cover;
     background-position: center;
 }
-
+/* This sets a right margin and left float for all images with float-left class. */
 .float-left {
     float: left;
     margin-right: 25px;
 }
 
+/* This sets a left margin 
+and right float for all 
+images with float-right class. */
 .float-right {
     float: right;
     margin-left: 25px;
 }
 
-.content {
+/* This allows the main text
+ to take up 75% of the width 
+ of the page with a left 
+ margin of 20 pixels. Changed to main instead of class content */
+main {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
 
-.benefits {
+/* This code applies to all section elements in main.
+The starter code applied the same code to multiple 
+sections individually. */
+main section {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+/* This code applies to all img elements
+nested in section elements contained within main.
+The starter code applied the same code to multiple 
+images individually. */
+main section img{
+    max-height: 200px;
+}
+
+/* This code applies to all h2 elements
+nested in section elements contained within main.
+The starter code applied the same code to multiple 
+h2 elements individually. */
+main section h2{
+    margin-bottom: 20px;
+    font-size: 36px;
+    
+}
+/* This is an aside from the 
+main content highlighting the 
+benefits of using Horiseon Services. */
+aside {
     margin-right: 20px;
     padding: 20px;
     clear: both;
@@ -88,6 +164,30 @@ p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
 }
+aside section{
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+
+aside section h3{
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+aside section img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+/* Commented out starter code,
+Semantic HTML allowed a more 
+general application of these 
+styles with fewer lines of code.
+I also changed the order CSS applied 
+styles to main content then aside benefits
+ because that is the 
+ order of the content in the HTML code.
 
 .benefit-lead {
     margin-bottom: 32px;
@@ -190,7 +290,9 @@ p {
     margin-bottom: 20px;
     font-size: 36px;
 }
+*/
 
+/* This sets the footer as a flex column centered with 30 px heading */
 footer {
     display: flex;
     flex-direction: column;
@@ -200,7 +302,7 @@ footer {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     
 }
-
+/* This sets the font size of footer h2 at 20 pixels. */
 footer h2 {
     font-size: 20px;
 }
